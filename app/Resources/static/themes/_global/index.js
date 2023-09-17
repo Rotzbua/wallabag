@@ -15,6 +15,7 @@ import '@fontsource/eb-garamond';
 import '@fontsource/lato';
 import '@fontsource/montserrat';
 import '@fontsource/oswald';
+import '@fontsource/roboto';
 import './global.scss';
 
 /* Shortcuts */
