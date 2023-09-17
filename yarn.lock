@@ -1057,6 +1057,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.8.tgz#04d162d8929d2911c126e6dafbd218e67c8bb63d"
   integrity sha512-bNj6wfiWXXbsxb2ffatjpX+GBv30cWZ1lwNXW9qTeX2FnzPomsGRV4HdPrf3TqyTiVqX6fLo80zrQcMi7r8+fA==
 
+"@fontsource/opendyslexic@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/opendyslexic/-/opendyslexic-5.0.7.tgz#4848e444896efd1343ad01e4aab52506bdc6a0b9"
+  integrity sha512-EmtwCEaCnMBwjw5x+w83u4zUoKiMMwXUueMAUiU47N5rsc7jWOjO+RY63WOZBKDJ5d9zR+4kpgAngPs3PpG9pw==
+
 "@fontsource/oswald@^5.0.12":
   version "5.0.12"
   resolved "https://registry.yarnpkg.com/@fontsource/oswald/-/oswald-5.0.12.tgz#db299945cee2474217bd8fc71e1a370f2307f447"
@@ -3978,11 +3983,6 @@ onetime@^5.1.2:
   integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
   dependencies:
     mimic-fn "^2.1.0"
-
-open-dyslexic@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/open-dyslexic/-/open-dyslexic-1.0.3.tgz#9618822394b983a1d8a4c8c46d31d18e978554df"
-  integrity sha512-pZ6LuLvnwT/T/HiDc6hGj2bTs+HimGrYHGQEaexQcou4E9euHhSmgJ6GvUOZQRSU+mYSvdu2M8RgiUcqqAAaCQ==
 
 open@^8.0.9:
   version "8.4.2"

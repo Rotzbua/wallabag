@@ -77,6 +77,7 @@
     "@fontsource/eb-garamond": "^5.0.5",
     "@fontsource/lato": "^5.0.12",
     "@fontsource/montserrat": "^5.0.5",
+    "@fontsource/opendyslexic": "^5.0.7",
     "@fontsource/oswald": "^5.0.12",
     "@fontsource/roboto": "^5.0.8",
     "annotator": "wallabag/annotator#master",
@@ -91,7 +92,6 @@
     "materialize-css": "^0.100.2",
     "mathjax": "^3.2.2",
     "mousetrap": "^1.6.0",
-    "open-dyslexic": "^1.0.3",
     "waypoints": "^4.0.1"
   },
   "scripts": {

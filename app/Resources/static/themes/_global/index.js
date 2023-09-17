@@ -9,8 +9,8 @@ import 'mathjax/es5/tex-svg';
 
 /* Fonts */
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
-import 'open-dyslexic/open-dyslexic-regular.css';
 import '@fontsource/atkinson-hyperlegible';
+import '@fontsource/opendyslexic';
 import '@fontsource/eb-garamond';
 import '@fontsource/lato';
 import '@fontsource/montserrat';
