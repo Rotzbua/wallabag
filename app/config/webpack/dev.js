@@ -50,7 +50,7 @@ module.exports = merge(commonConfig, {
         ],
       },
       {
-        test: /\.(jpg|png|gif|svg|ico|eot|ttf|woff|woff2)$/,
+        test: /\.(jpg|jpeg|png|webp|avif|gif|svg|ico|eot|ttf|woff|woff2)$/,
         type: 'asset/inline',
       },
     ],

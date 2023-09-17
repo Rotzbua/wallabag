@@ -74,7 +74,7 @@ module.exports = merge(commonConfig, {
         ],
       },
       {
-        test: /\.(jpg|png|gif|svg|ico)$/,
+        test: /\.(jpg|jpeg|png|webp|avif|gif|svg|ico)$/,
         include: /node_modules/,
         type: 'asset/resource',
         generator: {
@@ -82,7 +82,7 @@ module.exports = merge(commonConfig, {
         },
       },
       {
-        test: /\.(jpg|png|gif|svg|ico)$/,
+        test: /\.(jpg|jpeg|png|webp|avif|gif|svg|ico)$/,
         exclude: /node_modules/,
         type: 'asset/resource',
         generator: {
