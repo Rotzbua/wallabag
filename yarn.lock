@@ -1047,6 +1047,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/eb-garamond/-/eb-garamond-5.0.8.tgz#f8de289058da9a85d807243b2c575e71fbbc524c"
   integrity sha512-NhGQ6xESthNl08oeYxPJeptdm5xryQDgOIJ8AyrZtIr8r23i31p1KtWXGMfe/Deebr/zAWZ1H7sT1PWsuMXolQ==
 
+"@fontsource/lato@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.12.tgz#2290a23aaf3a25dd9aba4022aa131a689cfbd3fa"
+  integrity sha512-49kN7Ty0mDicmxNdaaDuOFtY5hvAwFN1pXkxaJJVlozh4v/houKwvodM3L7QVJEUC4KfNVEwn5Y409Us+EyFWw==
+
 "@fontsource/montserrat@^5.0.5":
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.8.tgz#04d162d8929d2911c126e6dafbd218e67c8bb63d"
@@ -3554,11 +3559,6 @@ known-css-properties@^0.28.0:
   version "0.28.0"
   resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.28.0.tgz#8a8be010f368b3036fe6ab0ef4bbbed972bd6274"
   integrity sha512-9pSL5XB4J+ifHP0e0jmmC98OGC1nL8/JjS+fi6mnTlIf//yt/MfVLtKg7S6nCtj/8KTcWX7nRlY0XywoYY1ISQ==
-
-lato-font@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/lato-font/-/lato-font-3.0.0.tgz#91b837e2374b668fb7331d44c894d37a2d9f8e11"
-  integrity sha512-wKhFCh9XX91Lepf38ynnZTNpkQD1OWuXV1RwFgcchUVQZzBixJ/yXCaVCIrNI3CbgT9pLcLzWKgn+6OETzAnug==
 
 launch-editor@^2.6.0:
   version "2.6.0"

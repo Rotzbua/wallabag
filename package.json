@@ -52,7 +52,6 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-webpack-plugin": "^4.0.1",
     "file-loader": "^6.2.0",
-    "lato-font": "^3.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.29",
     "postcss-loader": "^7.3.3",
@@ -76,6 +75,7 @@
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.0.12",
     "@fontsource/eb-garamond": "^5.0.5",
+    "@fontsource/lato": "^5.0.12",
     "@fontsource/montserrat": "^5.0.5",
     "@fontsource/oswald": "^5.0.12",
     "annotator": "wallabag/annotator#master",
