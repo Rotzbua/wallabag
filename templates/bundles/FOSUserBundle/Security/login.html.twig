@@ -21,7 +21,7 @@
 
             <div class="input-field col s12">
                 <label for="password">{{ 'security.login.password'|trans }}</label>
-                <input type="password" id="password" name="_password" />
+                <input type="password" id="password" name="_password">
             </div>
 
             <div class="input-field col s12">
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="card-action center">
-        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" />
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
         {% if registration_enabled %}
             <a href="{{ path('fos_user_registration_register') }}" class="waves-effect waves-light grey btn">{{ 'security.login.register'|trans }}</a>
         {% endif %}

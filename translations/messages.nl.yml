@@ -70,10 +70,10 @@ config:
         description: Met RSS-feeds van wallabag kunt u uw opgeslagen artikelen lezen met uw favoriete RSS-lezer. U moet wel eerst een token genereren.
     form_rules:
         faq:
-            tagging_rules_definition_description: Dit zijn regels die door Wallabag worden gebruikt om automatisch nieuwe items te labelen. <br /> Elke keer dat een nieuw item wordt toegevoegd, worden alle labelregels gebruikt om de labels toe te voegen die je hebt geconfigureerd, waardoor je de moeite van het handmatig classificeren van je items bespaart.
+            tagging_rules_definition_description: Dit zijn regels die door Wallabag worden gebruikt om automatisch nieuwe items te labelen. <br> Elke keer dat een nieuw item wordt toegevoegd, worden alle labelregels gebruikt om de labels toe te voegen die je hebt geconfigureerd, waardoor je de moeite van het handmatig classificeren van je items bespaart.
             operator_description:
-                matches: 'Valideert dat een <i>onderwerp</i> gelijk is aan <i>zoek</i> (hoofdletter-ongevoelig.<br />Voorbeeld: <code>titel gelijk aan "voetbal"</code>'
-                notmatches: 'Valideert dat een <i>onderwerp</i> niet gelijk is aan <i>zoek</i> (hoofdletter-ongevoelig.<br />Voorbeeld: <code>titel niet gelijk aan "voetbal"</code>'
+                matches: 'Valideert dat een <i>onderwerp</i> gelijk is aan <i>zoek</i> (hoofdletter-ongevoelig.<br>Voorbeeld: <code>titel gelijk aan "voetbal"</code>'
+                notmatches: 'Valideert dat een <i>onderwerp</i> niet gelijk is aan <i>zoek</i> (hoofdletter-ongevoelig.<br>Voorbeeld: <code>titel niet gelijk aan "voetbal"</code>'
                 and: Één regel EN een andere
                 or: Één regel OF een andere
                 not_equal_to: Niet gelijk aan…
@@ -100,7 +100,7 @@ config:
             how_to_use_them_title: Hoe gebruik is ze?
             tagging_rules_definition_title: Wat betekend "label regels"?
             title: FAQ
-            how_to_use_them_description: 'Laten we aannemen dat u nieuwe vermeldingen wilt labelen als « <i>korte lezing</i> » wanneer de leestijd minder dan 3 minuten bedraagt.<br />In dat geval moet u « readingTime &lt;= 3 » in het <i>Regelveld</i> en « <i>korte lezing</i> » in het <i>Labels</i> veld.<br />Meerdere labels kunnen tegelijkertijd worden toegevoegd door ze te scheiden met een komma:« <i>korte lezing, belangrijk</i> »<br />Complexe regels kunnen worden geschreven met behulp van vooraf gedefinieerde operators: if « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » label dan als« <i>lange lezing, php</i> »'
+            how_to_use_them_description: 'Laten we aannemen dat u nieuwe vermeldingen wilt labelen als « <i>korte lezing</i> » wanneer de leestijd minder dan 3 minuten bedraagt.<br>In dat geval moet u « readingTime &lt;= 3 » in het <i>Regelveld</i> en « <i>korte lezing</i> » in het <i>Labels</i> veld.<br>Meerdere labels kunnen tegelijkertijd worden toegevoegd door ze te scheiden met een komma:« <i>korte lezing, belangrijk</i> »<br>Complexe regels kunnen worden geschreven met behulp van vooraf gedefinieerde operators: if « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » label dan als« <i>lange lezing, php</i> »'
         tags_label: Labels
         rule_label: Regel
         edit_rule_label: wijzig
@@ -142,7 +142,7 @@ config:
         faq:
             ignore_origin_rules_definition_title: Wat betekent “negeer oorsprong regels”?
             operator_description:
-                matches: 'Test of een <i>onderwerp</i> overeenkomt met een <i>zoekopdracht</i> (niet hoofdlettergevoelig). <br />Voorbeeld: <code>_all ~ "https?: //rss.example.com/ foobar /.* "</code>'
+                matches: 'Test of een <i>onderwerp</i> overeenkomt met een <i>zoekopdracht</i> (niet hoofdlettergevoelig). <br>Voorbeeld: <code>_all ~ "https?: //rss.example.com/ foobar /.* "</code>'
                 equal_to: Gelijk aan…
                 label: Operator
             variable_description:
@@ -152,9 +152,9 @@ config:
             meaning: Betekenis
             variables_available_description: 'De volgende variabelen en operatoren kunnen worden gebruikt om regels voor het negeren van oorsprong te creëren:'
             variables_available_title: Welke variabelen en operatoren kunnen gebruikt worden om regels te schrijven?
-            how_to_use_them_description: Laten we aannemen dat u de oorsprong van een item wilt negeren dat afkomstig is van «<i>rss.example.com</i>» (<i>wetende dat na een omleiding het daadwerkelijke adres example.com is</i>) . <br />In dat geval moet u «host =" rss.example.com "» in het veld <i> Regel </i> plaatsen.
+            how_to_use_them_description: Laten we aannemen dat u de oorsprong van een item wilt negeren dat afkomstig is van «<i>rss.example.com</i>» (<i>wetende dat na een omleiding het daadwerkelijke adres example.com is</i>) . <br>In dat geval moet u «host =" rss.example.com "» in het veld <i> Regel </i> plaatsen.
             how_to_use_them_title: Hoe gebruik ik ze?
-            ignore_origin_rules_definition_description: Ze worden door wallabag gebruikt om automatisch een oorsprongsadres te negeren na een omleiding. <br />Als een omleiding plaatsvindt tijdens het ophalen van een nieuw item, zullen alle regels voor het negeren van de oorsprong (<i>door de gebruiker gedefinieerd en door de instantie gedefinieerd</i>) gebruikt worden om het oorspronkelijke adres te negeren.
+            ignore_origin_rules_definition_description: Ze worden door wallabag gebruikt om automatisch een oorsprongsadres te negeren na een omleiding. <br>Als een omleiding plaatsvindt tijdens het ophalen van een nieuw item, zullen alle regels voor het negeren van de oorsprong (<i>door de gebruiker gedefinieerd en door de instantie gedefinieerd</i>) gebruikt worden om het oorspronkelijke adres te negeren.
             title: Veelgestelde vragen
     form_feed:
         feed_links: Feedlinks

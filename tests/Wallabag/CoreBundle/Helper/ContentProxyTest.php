@@ -588,7 +588,7 @@ class ContentProxyTest extends TestCase
     {
         return [
             'script and comment' => [
-                '<strong>Script inside:</strong> <!--[if gte IE 4]><script>alert(\'lol\');</script><![endif]--><br />',
+                '<strong>Script inside:</strong> <!--[if gte IE 4]><script>alert(\'lol\');</script><![endif]--><br>',
                 'lol',
             ],
             'script' => [
@@ -656,7 +656,7 @@ class ContentProxyTest extends TestCase
         $graby->expects($this->any())
             ->method('fetchContent')
             ->willReturn([
-                'html' => '<p><img src="http://1.1.1.1/image.jpg" /></p>',
+                'html' => '<p><img src="http://1.1.1.1/image.jpg"></p>',
                 'title' => 'this is my title',
                 'url' => 'http://1.1.1.1/image.jpg',
                 'status' => '200',

@@ -167,9 +167,9 @@ config:
         faq:
             title: 'Preguntas frecuentes (FAQ)'
             tagging_rules_definition_title: '¿Qué significa «reglas de etiquetado»?'
-            tagging_rules_definition_description: 'Son las reglas usadas por wallabag para etiquetar automáticamente los nuevos artículos.<br />Cada vez que un artículo es añadido, todas las reglas de etiquetado automático serán usadas para etiquetarlo, ayudándote a clasificar automáticamente tus artículos.'
+            tagging_rules_definition_description: 'Son las reglas usadas por wallabag para etiquetar automáticamente los nuevos artículos.<br>Cada vez que un artículo es añadido, todas las reglas de etiquetado automático serán usadas para etiquetarlo, ayudándote a clasificar automáticamente tus artículos.'
             how_to_use_them_title: '¿Cómo se utilizan?'
-            how_to_use_them_description: 'Supongamos que quiere etiquetar los artículos nuevos como « <i>lectura corta</i> » cuando el tiempo de lectura sea menos de 3 minutos.<br /> En este caso, debe poner « readingTime &lt;= 3 » en el campo <i>Regla</i> y « <i>lectura corta</i> » en el campo <i>Etiquetas</i>.<br />Se pueden añadir varias etiquetas al mismo tiempo separadas por comas: « <i>lectura corta, lectura obligada</i> »<br />Se pueden escribir reglas complejas utilizando los operadores predefinidos: si « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » entonces etiqueta como « <i>lectura larga, php</i> »'
+            how_to_use_them_description: 'Supongamos que quiere etiquetar los artículos nuevos como « <i>lectura corta</i> » cuando el tiempo de lectura sea menos de 3 minutos.<br> En este caso, debe poner « readingTime &lt;= 3 » en el campo <i>Regla</i> y « <i>lectura corta</i> » en el campo <i>Etiquetas</i>.<br>Se pueden añadir varias etiquetas al mismo tiempo separadas por comas: « <i>lectura corta, lectura obligada</i> »<br>Se pueden escribir reglas complejas utilizando los operadores predefinidos: si « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » entonces etiqueta como « <i>lectura larga, php</i> »'
             variables_available_title: '¿Qué variables y operadores se pueden utilizar para escribir las reglas?'
             variables_available_description: 'Las siguientes variables y operadores se pueden utilizar para crear reglas de etiquetado:'
             meaning: 'Significado'
@@ -194,8 +194,8 @@ config:
                 not_equal_to: 'Diferente de…'
                 or: 'Una regla U otra'
                 and: 'Una regla Y la otra'
-                matches: 'Prueba si un <i>sujeto</i> corresponde a una <i>búsqueda</i> (insensible a mayúsculas).<br />Ejemplo : <code>title matches "fútbol"</code>'
-                notmatches: 'Prueba si un <i>sujeto</i> no corresponde a una <i>búsqueda</i> (insensible a mayúsculas).<br />Ejemplo : <code>title notmatches "fútbol"</code>'
+                matches: 'Prueba si un <i>sujeto</i> corresponde a una <i>búsqueda</i> (insensible a mayúsculas).<br>Ejemplo : <code>title matches "fútbol"</code>'
+                notmatches: 'Prueba si un <i>sujeto</i> no corresponde a una <i>búsqueda</i> (insensible a mayúsculas).<br>Ejemplo : <code>title notmatches "fútbol"</code>'
     otp:
         app:
             cancel: Cancelar
@@ -212,7 +212,7 @@ config:
             operator_description:
                 equal_to: Igual a…
                 label: Operador
-                matches: 'Comprueba que un <i>asunto</i> coincide con una <i>búsqueda</i> (no distingue entre mayúsculas y minúsculas).<br />Ejemplo: <code>_all ~ "https?://rss.example.com/ foobar/.*"</code>'
+                matches: 'Comprueba que un <i>asunto</i> coincide con una <i>búsqueda</i> (no distingue entre mayúsculas y minúsculas).<br>Ejemplo: <code>_all ~ "https?://rss.example.com/ foobar/.*"</code>'
             variable_description:
                 label: Variable
                 host: Host de las dirección
@@ -222,9 +222,9 @@ config:
             how_to_use_them_title: ¿Cómo se utilizan?
             title: Preguntas frecuentes (FAQ)
             ignore_origin_rules_definition_title: ¿Qué significa "ignorar reglas de origen"?
-            how_to_use_them_description: Supongamos que desea ignorar el origen de un artículo procedente de « <i>rss.example.com</i> » (<i>sabiendo que después de la redirección, la dirección real es example.com</i>) .<br />En ese caso, debe poner « host = "rss.example.com" » en el campo <i>Regla</i>.
+            how_to_use_them_description: Supongamos que desea ignorar el origen de un artículo procedente de « <i>rss.example.com</i> » (<i>sabiendo que después de la redirección, la dirección real es example.com</i>) .<br>En ese caso, debe poner « host = "rss.example.com" » en el campo <i>Regla</i>.
             variables_available_description: 'Las siguientes variables y operadores se pueden usar para crear reglas de origen ignoradas:'
-            ignore_origin_rules_definition_description: Wallabag las utiliza para ignorar automáticamente una dirección de origen después de una redirección.<br />Si se produce una redirección mientras se obtiene un nuevo artículo, todas las reglas de origen ignoradas (<i>definidas por el usuario y por la instancia</i>) serán utilizadas para ignorar la dirección de origen.
+            ignore_origin_rules_definition_description: Wallabag las utiliza para ignorar automáticamente una dirección de origen después de una redirección.<br>Si se produce una redirección mientras se obtiene un nuevo artículo, todas las reglas de origen ignoradas (<i>definidas por el usuario y por la instancia</i>) serán utilizadas para ignorar la dirección de origen.
     form_feed:
         feed_link:
             all: Todos

@@ -15,11 +15,11 @@ class DownloadImagesTest extends TestCase
     {
         return [
             'imgur' => [
-                '<div><img src="http://i.imgur.com/T9qgcHc.jpg" /></div>',
+                '<div><img src="http://i.imgur.com/T9qgcHc.jpg"></div>',
                 'http://imgur.com/gallery/WxtWY',
             ],
             'image with &' => [
-                '<div><img src="https://i2.wp.com/www.tvaddons.ag/wp-content/uploads/2017/01/Screen-Shot-2017-01-07-at-10.17.40-PM.jpg?w=640&amp;ssl=1" /></div>',
+                '<div><img src="https://i2.wp.com/www.tvaddons.ag/wp-content/uploads/2017/01/Screen-Shot-2017-01-07-at-10.17.40-PM.jpg?w=640&amp;ssl=1"></div>',
                 'https://www.tvaddons.ag/realdebrid-kodi-jarvis/',
             ],
         ];
@@ -53,7 +53,7 @@ class DownloadImagesTest extends TestCase
         $logger = new Logger('test', [$logHandler]);
 
         $download = new DownloadImages($httpMockClient, sys_get_temp_dir() . '/wallabag_test', 'http://wallabag.io/', $logger);
-        $res = $download->processHtml(123, '<div><img src="http://i.imgur.com/T9qgcHc.jpg" /></div>', 'http://imgur.com/gallery/WxtWY');
+        $res = $download->processHtml(123, '<div><img src="http://i.imgur.com/T9qgcHc.jpg"></div>', 'http://imgur.com/gallery/WxtWY');
 
         $this->assertStringContainsString('http://i.imgur.com/T9qgcHc.jpg', $res, 'Image were not replace because of content-type');
     }
@@ -159,7 +159,7 @@ class DownloadImagesTest extends TestCase
         $logger = new Logger('test', [$logHandler]);
 
         $download = new DownloadImages($httpMockClient, sys_get_temp_dir() . '/wallabag_test', 'http://wallabag.io/', $logger);
-        $res = $download->processHtml(123, '<p><img class="alignnone wp-image-1153" src="http://piketty.blog.lemonde.fr/files/2017/10/F1FR-530x375.jpg" alt="" width="628" height="444" srcset="http://piketty.blog.lemonde.fr/files/2017/10/F1FR-530x375.jpg 530w, http://piketty.blog.lemonde.fr/files/2017/10/F1FR-768x543.jpg 768w, http://piketty.blog.lemonde.fr/files/2017/10/F1FR-900x636.jpg 900w" sizes="(max-width: 628px) 100vw, 628px" /></p>', 'http://piketty.blog.lemonde.fr/2017/10/12/budget-2018-la-jeunesse-sacrifiee/');
+        $res = $download->processHtml(123, '<p><img class="alignnone wp-image-1153" src="http://piketty.blog.lemonde.fr/files/2017/10/F1FR-530x375.jpg" alt="" width="628" height="444" srcset="http://piketty.blog.lemonde.fr/files/2017/10/F1FR-530x375.jpg 530w, http://piketty.blog.lemonde.fr/files/2017/10/F1FR-768x543.jpg 768w, http://piketty.blog.lemonde.fr/files/2017/10/F1FR-900x636.jpg 900w" sizes="(max-width: 628px) 100vw, 628px"></p>', 'http://piketty.blog.lemonde.fr/2017/10/12/budget-2018-la-jeunesse-sacrifiee/');
 
         $this->assertStringNotContainsString('http://piketty.blog.lemonde.fr/', $res, 'Image srcset attribute were not replaced');
     }
@@ -179,7 +179,7 @@ class DownloadImagesTest extends TestCase
        (min-width: 1251px) calc( (100vw - 530px) / 2 )
        (min-width: 1086px) calc(100vw - 480px)
        (min-width: 626px)  calc(100vw - 335px)
-                           calc(100vw - 30px)" alt="" /></figure>', 'https://css-tricks.com/the-critical-request/');
+                           calc(100vw - 30px)" alt=""></figure>', 'https://css-tricks.com/the-critical-request/');
 
         $this->assertStringNotContainsString('f_auto,q_auto', $res, 'Image srcset attribute were not replaced');
     }
@@ -196,7 +196,7 @@ class DownloadImagesTest extends TestCase
 
         $download = new DownloadImages($httpMockClient, sys_get_temp_dir() . '/wallabag_test', 'http://wallabag.io/', $logger);
         // wordpress.com sites using &#038; as an &amp; alternative
-        $res = $download->processHtml(123, '<img srcset="https://example.com/20191204_133626-scaled.jpg?strip=info&#038;w=600&#038;ssl=1 600w,https://example.com/20191204_133626-scaled.jpg?strip=info&#038;w=900&#038;ssl=1 900w" src="https://example.com/20191204_133626-scaled.jpg?ssl=1"/>', 'https://example.com/about/');
+        $res = $download->processHtml(123, '<img srcset="https://example.com/20191204_133626-scaled.jpg?strip=info&#038;w=600&#038;ssl=1 600w,https://example.com/20191204_133626-scaled.jpg?strip=info&#038;w=900&#038;ssl=1 900w" src="https://example.com/20191204_133626-scaled.jpg?ssl=1">', 'https://example.com/about/');
 
         $this->assertStringNotContainsString('https://example.com', $res, 'Image srcset attribute were not replaced');
     }

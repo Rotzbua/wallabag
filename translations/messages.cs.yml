@@ -160,8 +160,8 @@ config:
                 isStarred: Zda je položka označena hvězdičkou nebo ne
             operator_description:
                 greater_than: Větší než…
-                notmatches: 'Testuje, zda <i>předmět</i> neodpovídá <i>vyhledávání</i> (nerozlišuje velká a malá písmena).<br />Příklad: <code>title nomatches "fotbal"</code>'
-                matches: 'Testuje, zda <i>předmět</i> odpovídá <i>vyhledávání</i> (nerozlišuje velká a malá písmena).<br />Příklad: <code>title matches "fotbal"</code>'
+                notmatches: 'Testuje, zda <i>předmět</i> neodpovídá <i>vyhledávání</i> (nerozlišuje velká a malá písmena).<br>Příklad: <code>title nomatches "fotbal"</code>'
+                matches: 'Testuje, zda <i>předmět</i> odpovídá <i>vyhledávání</i> (nerozlišuje velká a malá písmena).<br>Příklad: <code>title matches "fotbal"</code>'
                 and: Jedno pravidlo A jiné
                 or: Jedno pravidlo NEBO jiné
                 not_equal_to: Není rovno…
@@ -173,9 +173,9 @@ config:
             meaning: Význam
             variables_available_description: 'Pro vytvoření pravidel štítkování mohou být použity následující proměnné a operátory:'
             variables_available_title: Které proměnné a operátory mohu pro psaní pravidel použít?
-            how_to_use_them_description: 'Předpokládejme, že chcete označit nové položky štítkem jako je « <i>krátké čtení</i> », pokud je doba čtení kratší než 3 minuty.<br />V takovém případě byste měli do pole <i>Pravidlo</i> zadat « readingTime &lt;= 3 » a do pole <i>Štítky</i> zadat « <i>krátké čtení</i> ».<br />Několik štítků současně lze přidat jejich oddělením čárkou: « <i>krátké čtení, musím přečíst</i> »<br />Složitá pravidla lze zapsat pomocí předdefinovaných operátorů: if « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » then tag as « <i>dlouhé čtení, php</i> »'
+            how_to_use_them_description: 'Předpokládejme, že chcete označit nové položky štítkem jako je « <i>krátké čtení</i> », pokud je doba čtení kratší než 3 minuty.<br>V takovém případě byste měli do pole <i>Pravidlo</i> zadat « readingTime &lt;= 3 » a do pole <i>Štítky</i> zadat « <i>krátké čtení</i> ».<br>Několik štítků současně lze přidat jejich oddělením čárkou: « <i>krátké čtení, musím přečíst</i> »<br>Složitá pravidla lze zapsat pomocí předdefinovaných operátorů: if « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » then tag as « <i>dlouhé čtení, php</i> »'
             how_to_use_them_title: Jak je použiji?
-            tagging_rules_definition_description: Jsou to pravidla používaná programem wallabag k automatickému označování nových položek štítkem. <br />Pokaždé, když je přidána nová položky, všechna pravidla štítkování budou použita k přidání štítků, které jste nakonfigurovali, čímž vám ušetří potíže s ručním označováním vašich položek.
+            tagging_rules_definition_description: Jsou to pravidla používaná programem wallabag k automatickému označování nových položek štítkem. <br>Pokaždé, když je přidána nová položky, všechna pravidla štítkování budou použita k přidání štítků, které jste nakonfigurovali, čímž vám ušetří potíže s ručním označováním vašich položek.
             tagging_rules_definition_title: Co znamenají „pravidla štítkování“?
             title: Časté otázky
         export: Exportovat
@@ -275,7 +275,7 @@ config:
     form_ignore_origin_rules:
         faq:
             operator_description:
-                matches: 'Testuje, zda <i>předmět</i> odpovídá <i>vyhledávání</i> (nerozlišuje velká a malá písmena).<br />Příklad: <code>_all ~ "https?://rss.domena.cz/foobar/.*"</code>'
+                matches: 'Testuje, zda <i>předmět</i> odpovídá <i>vyhledávání</i> (nerozlišuje velká a malá písmena).<br>Příklad: <code>_all ~ "https?://rss.domena.cz/foobar/.*"</code>'
                 equal_to: Je rovno…
                 label: Operátor
             variable_description:
@@ -285,9 +285,9 @@ config:
             meaning: Význam
             variables_available_description: 'K vytvoření pravidel ignorování původu lze použít následující proměnné a operátory:'
             variables_available_title: Které proměnné a operátory mohu použít k zápisu pravidel?
-            how_to_use_them_description: Předpokládejme, že chcete ignorovat původ položky přicházející z « <i>rss.domena.cz</i> » (<i>s vědomím, že po přesměrování je skutečná adresa domena.cz</i>).<br />V takovém případě byste měli do pole <i>Pravidlo</i> zadat « host = "rss.domena.cz" ».
+            how_to_use_them_description: Předpokládejme, že chcete ignorovat původ položky přicházející z « <i>rss.domena.cz</i> » (<i>s vědomím, že po přesměrování je skutečná adresa domena.cz</i>).<br>V takovém případě byste měli do pole <i>Pravidlo</i> zadat « host = "rss.domena.cz" ».
             how_to_use_them_title: Jak je použiji?
-            ignore_origin_rules_definition_description: Jsou používána programem wallabag k automatickému ignorování adresy původu po přesměrování.<br />Pokud dojde k přesměrování při načítání nové položky, budou všechna pravidla ignorování původu (<i>uživatelem definovaná a definovaná instancí</i>) použita k ignorování adresy původu.
+            ignore_origin_rules_definition_description: Jsou používána programem wallabag k automatickému ignorování adresy původu po přesměrování.<br>Pokud dojde k přesměrování při načítání nové položky, budou všechna pravidla ignorování původu (<i>uživatelem definovaná a definovaná instancí</i>) použita k ignorování adresy původu.
             ignore_origin_rules_definition_title: Co znamená „ignorovat pravidla původu“?
             title: Časté otázky
     reset:
