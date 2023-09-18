@@ -110,7 +110,7 @@
                                 <div class="input-field col s12">
                                     <h5>{{ 'config.form_settings.android_configuration'|trans }}</h5>
                                     <a href="wallabag://{{ app.user.username }}@{{ wallabag_url }}" class="waves-effect waves-light btn hide-on-large-only">{{ 'config.form_settings.android_instruction'|trans }}</a>
-                                    <img id="androidQrcode" class="hide-on-med-and-down" alt="{{ 'config.otp.app.qrcode_label'|trans }}" />
+                                    <img id="androidQrcode" class="hide-on-med-and-down" alt="{{ 'config.otp.app.qrcode_label'|trans }}">
                                 </div>
                                 <script>
                                     document.getElementById('androidQrcode').src = jrQrcode.getQrBase64('wallabag://{{ app.user.username }}@{{ wallabag_url }}');
@@ -269,8 +269,8 @@
 
                             {{ form_widget(form.user.save, {'attr': {'class': 'btn waves-effect waves-light'}}) }}
 
-                            <br/>
-                            <br/>
+                            <br>
+                            <br>
                             <div class="row">
                                 <h5>{{ 'config.otp.page_title'|trans }}</h5>
 
@@ -431,7 +431,7 @@
                                     <div class="card-content">
                                         <span class="card-title">{{ 'config.form_rules.card.export_tagging_rules'|trans }}</span>
                                         <p>{{ 'config.form_rules.card.export_tagging_rules_detail'|trans }}</p>
-                                        <br/>
+                                        <br>
                                         <p><a href="{{ path('export_tagging_rule') }}" class="waves-effect waves-light btn">{{ 'config.form_rules.export'|trans }}</a></p>
                                     </div>
                                 </div>
@@ -516,8 +516,8 @@
                                         <tr>
                                             <td>domainName</td>
                                             <td>{{ 'config.form_rules.faq.variable_description.domainName'|trans }}</td>
-                                            <td>matches<br />notmaches</td>
-                                            <td>{{ 'config.form_rules.faq.operator_description.matches'|trans|raw }}<br />{{ 'config.form_rules.faq.operator_description.notmatches'|trans|raw }}</td>
+                                            <td>matches<br>notmaches</td>
+                                            <td>{{ 'config.form_rules.faq.operator_description.matches'|trans|raw }}<br>{{ 'config.form_rules.faq.operator_description.notmatches'|trans|raw }}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -614,28 +614,28 @@
                             <p>{{ 'config.reset.description'|trans }}</p>
                             <p>
                                 <form action="{{ path('config_reset', {type: 'annotations'}) }}" method="post" onsubmit="return confirm('{{ 'config.reset.confirm'|trans|escape('js') }}')" name="reset-annotations">
-                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}" />
+                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}">
 
                                     <button class="waves-effect waves-light btn red" type="submit">{{ 'config.reset.annotations'|trans }}</button>
                                 </form>
                             </p>
                             <p>
                                 <form action="{{ path('config_reset', {type: 'tags'}) }}" method="post" onsubmit="return confirm('{{ 'config.reset.confirm'|trans|escape('js') }}')" name="reset-tags">
-                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}" />
+                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}">
 
                                     <button class="waves-effect waves-light btn red" type="submit">{{ 'config.reset.tags'|trans }}</button>
                                 </form>
                             </p>
                             <p>
                                 <form action="{{ path('config_reset', {type: 'archived'}) }}" method="post" onsubmit="return confirm('{{ 'config.reset.confirm'|trans|escape('js') }}')" name="reset-archived">
-                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}" />
+                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}">
 
                                     <button class="waves-effect waves-light btn red" type="submit">{{ 'config.reset.archived'|trans }}</button>
                                 </form>
                             </p>
                             <p>
                                 <form action="{{ path('config_reset', {type: 'entries'}) }}" method="post" onsubmit="return confirm('{{ 'config.reset.confirm'|trans|escape('js') }}')" name="reset-entries">
-                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}" />
+                                    <input type="hidden" name="token" value="{{ csrf_token('reset-area') }}">
 
                                     <button class="waves-effect waves-light btn red" type="submit">{{ 'config.reset.entries'|trans }}</button>
                                 </form>
@@ -643,13 +643,13 @@
                         </div>
 
                         {% if enabled_users > 1 %}
-                            <br /><hr /><br />
+                            <br><hr><br>
 
                             <div class="row">
                                 <h5>{{ 'config.form_user.delete.title'|trans }}</h5>
                                 <p>{{ 'config.form_user.delete.description'|trans }}</p>
                                 <form action="{{ path('delete_account') }}" method="post" onsubmit="return confirm('{{ 'config.form_user.delete.confirm'|trans|escape('js') }}')" name="delete-account">
-                                    <input type="hidden" name="token" value="{{ csrf_token('delete-account') }}" />
+                                    <input type="hidden" name="token" value="{{ csrf_token('delete-account') }}">
 
                                     <button class="waves-effect waves-light btn red" type="submit">{{ 'config.form_user.delete.button'|trans }}</button>
                                 </form>

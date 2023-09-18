@@ -177,16 +177,16 @@ config:
                 not_equal_to: Nije jednako …
                 and: Jedno pravilo I jedno drugo
                 strictly_less_than: Strogo manje od …
-                notmatches: 'Provjerava nepoklapanje <i>teme</i> s <i>traženim izrazom</i> (razlikuje mala/velika slova).<br /> Primjer: <code> naslov se ne poklapa s „nogomet”</code>'
-                matches: 'Provjerava poklapanje <i>teme</i> s <i>traženim izrazom</i> (razlikuje mala/velika slova).<br /> Primjer: <code> naslov se poklapa s „nogomet”</code>'
-            tagging_rules_definition_description: To su pravila koja wallabag koristi za automatsko označivanje novih zapisa.<br />Pri svakom dodavanju novog zapisa, primijenjuju se sva tvoja pravila za označivanje, kako bi se dodale konfigurirane oznake. Na taj način izbjegavaš pojedinačnu klasifikaciju zapisa.
+                notmatches: 'Provjerava nepoklapanje <i>teme</i> s <i>traženim izrazom</i> (razlikuje mala/velika slova).<br> Primjer: <code> naslov se ne poklapa s „nogomet”</code>'
+                matches: 'Provjerava poklapanje <i>teme</i> s <i>traženim izrazom</i> (razlikuje mala/velika slova).<br> Primjer: <code> naslov se poklapa s „nogomet”</code>'
+            tagging_rules_definition_description: To su pravila koja wallabag koristi za automatsko označivanje novih zapisa.<br>Pri svakom dodavanju novog zapisa, primijenjuju se sva tvoja pravila za označivanje, kako bi se dodale konfigurirane oznake. Na taj način izbjegavaš pojedinačnu klasifikaciju zapisa.
             tagging_rules_definition_title: Što znači „Pravila za označivanje”?
             how_to_use_them_title: Kako ih koristiti?
             variables_available_description: 'Sljedeće varijable i opretori mogu se koristiti za izradu pravila za označivanje:'
             title: ČPP
             meaning: Značenje
             variables_available_title: Koje varijable i operateri mogu koristiti za pisanje pravila?
-            how_to_use_them_description: 'Pretpostavimo da želiš označiti nove zapise kao <i>kratko čitanje</i> kad je vrijeme čitanja manje od 3 minute.<br />U tom slučaju, postavi „readingTime &lt;= 3” u polju <i>Pravilo</i> i <i>kratko čitanje</i> u polju <i>Oznake</i>.<br />Moguće je dodati više oznaka istovremeno, odvajajući ih zarezom: „<i>kratko čitanje, moram čitati</i>”<br />Složena pravila mogu se napisati pomoću unaprijed definiranih operatora: ako „<i>readingTime &gt;= 5 AND domainName = "www.php.net"</i>”, onda označi kao „<i>dugo čitanje, php</i>”'
+            how_to_use_them_description: 'Pretpostavimo da želiš označiti nove zapise kao <i>kratko čitanje</i> kad je vrijeme čitanja manje od 3 minute.<br>U tom slučaju, postavi „readingTime &lt;= 3” u polju <i>Pravilo</i> i <i>kratko čitanje</i> u polju <i>Oznake</i>.<br>Moguće je dodati više oznaka istovremeno, odvajajući ih zarezom: „<i>kratko čitanje, moram čitati</i>”<br>Složena pravila mogu se napisati pomoću unaprijed definiranih operatora: ako „<i>readingTime &gt;= 5 AND domainName = "www.php.net"</i>”, onda označi kao „<i>dugo čitanje, php</i>”'
         delete_rule_label: ukloni
         edit_rule_label: uredi
         if_label: ako
@@ -296,7 +296,7 @@ config:
     form_ignore_origin_rules:
         faq:
             operator_description:
-                matches: 'Provjerava poklapanje <i>teme</i> s <i>traženim izrazom</i> (ne razlikuje mala/velika slova).<br />Primjer: <code>_all ~ "https?://rss.example.com/foobar/.*"</code>'
+                matches: 'Provjerava poklapanje <i>teme</i> s <i>traženim izrazom</i> (ne razlikuje mala/velika slova).<br>Primjer: <code>_all ~ "https?://rss.example.com/foobar/.*"</code>'
                 equal_to: Jednako …
                 label: Operator
             variable_description:
@@ -309,8 +309,8 @@ config:
             how_to_use_them_title: Kako ih koristiti?
             ignore_origin_rules_definition_title: Čemu služe „pravila za zanemarivanje izvora”?
             title: ČPP
-            ignore_origin_rules_definition_description: Wallabag ih koristi za automatsko zanemarivanje adrese izvora nakon preusmjeravanja.<br />Ako dođe do preusmjeravanja tijekom dohvaćanja novog zapisa, sva pravila za zanemarivanje izvora (<i>definirana od korisnika i primjerka programa</i>) koristit će se za zanemarivanje adrese izvora.
-            how_to_use_them_description: Pretpostavimo da želiš zanemariti izvor unosa koji dolazi od „<i>rss.example.com</i>” (<i>znajući da je nakon preusmjeravanja, stvarna adresa example.com</i>).<br />U tom slučaju, postavi host = "rss.example.com" u polje <i>Pravilo</i>.
+            ignore_origin_rules_definition_description: Wallabag ih koristi za automatsko zanemarivanje adrese izvora nakon preusmjeravanja.<br>Ako dođe do preusmjeravanja tijekom dohvaćanja novog zapisa, sva pravila za zanemarivanje izvora (<i>definirana od korisnika i primjerka programa</i>) koristit će se za zanemarivanje adrese izvora.
+            how_to_use_them_description: Pretpostavimo da želiš zanemariti izvor unosa koji dolazi od „<i>rss.example.com</i>” (<i>znajući da je nakon preusmjeravanja, stvarna adresa example.com</i>).<br>U tom slučaju, postavi host = "rss.example.com" u polje <i>Pravilo</i>.
     form_feed:
         description: Atom feedovi koje pruža wallabag omogućuju čitanje spremljenih članaka pomoću tvojeg omiljenog Atom čitača. Najprije moraš generirati token.
         no_token: Nema tokena

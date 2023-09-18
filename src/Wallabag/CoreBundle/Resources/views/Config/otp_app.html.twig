@@ -15,7 +15,7 @@
                             <p>{{ 'config.otp.app.two_factor_code_description_2'|trans }}</p>
 
                             <p>
-                                <img id="2faQrcode" class="hide-on-med-and-down" />
+                                <img id="2faQrcode" class="hide-on-med-and-down">
                                 <script>
                                     document.getElementById('2faQrcode').src = jrQrcode.getQrBase64('{{ qr_code|raw }}');
                                 </script>
@@ -44,7 +44,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <label for="_auth_code">{{ "auth_code"|trans({}, 'SchebTwoFactorBundle') }}</label>
-                                            <input id="_auth_code" type="text" autocomplete="off" name="_auth_code" />
+                                            <input id="_auth_code" type="text" autocomplete="off" name="_auth_code">
                                         </div>
                                     </div>
                                 </div>

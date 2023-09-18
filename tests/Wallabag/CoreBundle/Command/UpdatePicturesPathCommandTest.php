@@ -37,7 +37,7 @@ class UpdatePicturesPathCommandTest extends WallabagCoreTestCase
         $entry = new Entry($this->getLoggedInUser());
         $entry->setUrl($url);
         $entry->setPreviewPicture('https://old-url.test/mypicture.jpg');
-        $entry->setContent('my great article with a picture <img src="https://old-url.test/mypicture.jpg" />');
+        $entry->setContent('my great article with a picture <img src="https://old-url.test/mypicture.jpg">');
         $em->persist($entry);
         $em->flush();
 

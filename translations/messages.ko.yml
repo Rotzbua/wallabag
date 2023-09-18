@@ -366,9 +366,9 @@ flashes:
 config:
     form_ignore_origin_rules:
         faq:
-            ignore_origin_rules_definition_description: 리다이렉션 후 wallabag 에서 원본 주소를 자동으로 무시하는 데 사용됩니다. <br /> 새 문서를 로드 할 때, 리다이렉션이 발생하면 모든 원본 무시 규칙(<i> 사용자 정의 및 인스턴스 정의 </i>)이 적용됩니다. 원본 주소를 무시하는 데 사용됩니다.
+            ignore_origin_rules_definition_description: 리다이렉션 후 wallabag 에서 원본 주소를 자동으로 무시하는 데 사용됩니다. <br> 새 문서를 로드 할 때, 리다이렉션이 발생하면 모든 원본 무시 규칙(<i> 사용자 정의 및 인스턴스 정의 </i>)이 적용됩니다. 원본 주소를 무시하는 데 사용됩니다.
             operator_description:
-                matches: '<i>주제</i>가 <i> 검색</i> (대소 문자 구분 안함)과 일치하는지 테스트합니다. <br />예: <code>_all ~ "https?://rss.example.com/ foobar/.*"</code>'
+                matches: '<i>주제</i>가 <i> 검색</i> (대소 문자 구분 안함)과 일치하는지 테스트합니다. <br>예: <code>_all ~ "https?://rss.example.com/ foobar/.*"</code>'
                 equal_to: 같다면…
                 label: 연산자
             variable_description:
@@ -378,7 +378,7 @@ config:
             meaning: 의미
             variables_available_description: '다음 변수 및 연산자를 사용하여 원본 무시 규칙을 만들 수 있습니다:'
             variables_available_title: 규칙을 작성하는 데 사용할 수있는 변수와 연산자는 무엇입니까?
-            how_to_use_them_description: « <i>rss.example.com</i> » 에서 오는 기사의 출처를 무시한다고 가정 해 보겠습니다 (<i>리다이렉션 후 실제 주소가 example.com </i>임을 알고 있음).<br />이 경우 <i> 규칙</i> 입력 란에 « host = "rss.example.com" » 을 입력해야 합니다.
+            how_to_use_them_description: « <i>rss.example.com</i> » 에서 오는 기사의 출처를 무시한다고 가정 해 보겠습니다 (<i>리다이렉션 후 실제 주소가 example.com </i>임을 알고 있음).<br>이 경우 <i> 규칙</i> 입력 란에 « host = "rss.example.com" » 을 입력해야 합니다.
             how_to_use_them_title: 사용하는 방법은?
             ignore_origin_rules_definition_title: '"원본 무시 규칙"이란?'
             title: 자주 묻는 질문
@@ -395,15 +395,15 @@ config:
                 url: 문서 URL
                 title: 문서 제목
                 label: 변수
-            tagging_rules_definition_description: wallabag 에서 자동으로 새 문서에 태그를 지정하는 데 사용하는 규칙입니다. <br /> 태그 지정 규칙이 새 문서가 추가 될 때마다 태그를 구성하는 데 사용되므로, 수동으로 분류하는 수고를 덜 수 있습니다.
-            how_to_use_them_description: '읽기 시간이 3 분 미만인 경우 «<i> 짧은 읽기 </i>» 와 같은 새 기사에 태그를 지정한다고 가정합니다. <br />이 경우 <i> 규칙</i> 을 입력해야합니다. <i>태그</i> 필드에 « readingTime &lt;= 3 » 을 입력하고 « <i>짧은 읽기</i>» 를 입력하십시오. <br /> 여러 태그를 쉼표로구분하여 한 번에 추가 할 수 있습니다: « <i> 짧은 읽기, 반드시 읽기</i> » <br /> 사전 정의 된 연산자를 사용하여 복잡한 규칙을 작성할 수 있습니다: 만약 « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » 다음으로 태그 «<i> 긴 읽기, php</i>»'
+            tagging_rules_definition_description: wallabag 에서 자동으로 새 문서에 태그를 지정하는 데 사용하는 규칙입니다. <br> 태그 지정 규칙이 새 문서가 추가 될 때마다 태그를 구성하는 데 사용되므로, 수동으로 분류하는 수고를 덜 수 있습니다.
+            how_to_use_them_description: '읽기 시간이 3 분 미만인 경우 «<i> 짧은 읽기 </i>» 와 같은 새 기사에 태그를 지정한다고 가정합니다. <br>이 경우 <i> 규칙</i> 을 입력해야합니다. <i>태그</i> 필드에 « readingTime &lt;= 3 » 을 입력하고 « <i>짧은 읽기</i>» 를 입력하십시오. <br> 여러 태그를 쉼표로구분하여 한 번에 추가 할 수 있습니다: « <i> 짧은 읽기, 반드시 읽기</i> » <br> 사전 정의 된 연산자를 사용하여 복잡한 규칙을 작성할 수 있습니다: 만약 « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » 다음으로 태그 «<i> 긴 읽기, php</i>»'
             operator_description:
                 and: 하나의 규칙 그리고 다른 규칙
                 or: 하나의 규칙 또는 다른 규칙
                 strictly_less_than: 엄격히 작다면…
                 strictly_greater_than: 엄격히 크다면…
-                matches: '<i>제목</i>이 <i>검색어</i>와 일치하는지 테스트합니다 (대소문자 구분안함).<br />예: <code> title matches "football"</code>'
-                notmatches: '<i>주제</i>가 <i>검색어</i>와 일치하지 않는지 테스트합니다 (대소문자 구분안함). <br />예: <code>title notmatches "football"</code>'
+                matches: '<i>제목</i>이 <i>검색어</i>와 일치하는지 테스트합니다 (대소문자 구분안함).<br>예: <code> title matches "football"</code>'
+                notmatches: '<i>주제</i>가 <i>검색어</i>와 일치하지 않는지 테스트합니다 (대소문자 구분안함). <br>예: <code>title notmatches "football"</code>'
                 greater_than: 크다면…
                 less_than: 작다면…
                 not_equal_to: 같지 않다면…

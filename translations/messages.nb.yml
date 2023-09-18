@@ -142,7 +142,7 @@ config:
                 title: Tittel for oppføringen
                 label: Variabel
             meaning: Betydning
-            tagging_rules_definition_description: De er regler brukt av wallabag for å automatisk merke nye oppføringer.<br />Hver gang en ny oppføring legges til, vil alle etikettmeringsreglene bli brukt for å legge til etikettene du har satt opp, noe som sparer deg for bryet med å klassifisere dine oppføringer.
+            tagging_rules_definition_description: De er regler brukt av wallabag for å automatisk merke nye oppføringer.<br>Hver gang en ny oppføring legges til, vil alle etikettmeringsreglene bli brukt for å legge til etikettene du har satt opp, noe som sparer deg for bryet med å klassifisere dine oppføringer.
             tagging_rules_definition_title: Hva betyr «etikettmerkingsregler»?
             how_to_use_them_title: Hvordan brukes de?
             operator_description:

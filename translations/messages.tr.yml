@@ -171,10 +171,10 @@ config:
                 not_equal_to: Eşit değildir…
                 or: Bir kural veya birbaşkası
                 and: Bir kural ve diğeri
-                matches: '<i>konu</i>nun <i>arama</i> kriterine (büyük küçük harf duyarsız) eşleştiğini test eder.<br />Örnek: <code>title matches "futbol"</code>'
-                notmatches: '<i>konu</i>nun <i>arama</i> kriterine (büyük küçük harf duyarsız) eşleşmediğini test eder.<br />Örnek: <code>title nonmatches "futbol"</code>'
-            tagging_rules_definition_description: Bunlar wallabag'in yeni makaleleri otomatik olarak etiketleyebilmesi için tanımlanmış kurallardır.<br />Her yeni makale eklendiğinde, ayarladığınız tüm etiket kuralları kullanılarak makaleniz etiketlenecektir. Bu sayede her bir makaleyi tek tek etiketlemekle uğraşmanız gerekmeyecek.
-            how_to_use_them_description: 'Örneğin, 3 dakikadan kısa okuma süresi olan yeni makaleleri « <i>kısa okumalar</i>» etiketi ile etiketlemek istiyorsunuz diyelim.<br />Bu durumda, <i>Kural</i> alanına « readingTime &lt; = 3 » değeri, ve de <i>Etiketler</i> alanına da <i>kısa okumalar</i> değerini girmelisiniz.<br /> Eğer birden fazla etiket tanımlamak istiyorsanız arasına virgül koyabilirsiniz: « <i>kısa okumalar, mutlaka oku</i> »<br />Daha kompleks kurallar önden tanımlanmış operatörlerle girilebilir: Eğer « <i> readingTime &gt; = AND domainName = "www.php.net"</i> » ise, o zaman « <i>uzun okumalar, php</i> » gibi girebilirsiniz'
+                matches: '<i>konu</i>nun <i>arama</i> kriterine (büyük küçük harf duyarsız) eşleştiğini test eder.<br>Örnek: <code>title matches "futbol"</code>'
+                notmatches: '<i>konu</i>nun <i>arama</i> kriterine (büyük küçük harf duyarsız) eşleşmediğini test eder.<br>Örnek: <code>title nonmatches "futbol"</code>'
+            tagging_rules_definition_description: Bunlar wallabag'in yeni makaleleri otomatik olarak etiketleyebilmesi için tanımlanmış kurallardır.<br>Her yeni makale eklendiğinde, ayarladığınız tüm etiket kuralları kullanılarak makaleniz etiketlenecektir. Bu sayede her bir makaleyi tek tek etiketlemekle uğraşmanız gerekmeyecek.
+            how_to_use_them_description: 'Örneğin, 3 dakikadan kısa okuma süresi olan yeni makaleleri « <i>kısa okumalar</i>» etiketi ile etiketlemek istiyorsunuz diyelim.<br>Bu durumda, <i>Kural</i> alanına « readingTime &lt; = 3 » değeri, ve de <i>Etiketler</i> alanına da <i>kısa okumalar</i> değerini girmelisiniz.<br> Eğer birden fazla etiket tanımlamak istiyorsanız arasına virgül koyabilirsiniz: « <i>kısa okumalar, mutlaka oku</i> »<br>Daha kompleks kurallar önden tanımlanmış operatörlerle girilebilir: Eğer « <i> readingTime &gt; = AND domainName = "www.php.net"</i> » ise, o zaman « <i>uzun okumalar, php</i> » gibi girebilirsiniz'
         if_label: eğer
         then_tag_as_label: ise, şu şekilde etiketle
         delete_rule_label: sil
@@ -212,7 +212,7 @@ config:
             operator_description:
                 equal_to: Eşittir…
                 label: Operatör
-                matches: '<i>Hedefin</i> bir <i>aramayla</i> (büyük/küçük harf farketmeden) eşleştiğini test eder.<br />Örnek: <code>_all ~ "https?://rss.example.com/foobar/.*"</code>'
+                matches: '<i>Hedefin</i> bir <i>aramayla</i> (büyük/küçük harf farketmeden) eşleştiğini test eder.<br>Örnek: <code>_all ~ "https?://rss.example.com/foobar/.*"</code>'
             variable_description:
                 label: Değişken
                 _all: Tam adres, genellikle kalıp eşleştirme için kullanılır
@@ -222,9 +222,9 @@ config:
             how_to_use_them_title: Bunu nasıl kullanırım?
             title: S.S.S.
             variables_available_description: 'Orijinal kaynağı yok say kuralları oluşturmak için aşağıdaki değişken ve operatörler kullanılabilir:'
-            ignore_origin_rules_definition_description: Wallabag tarafından bir yeniden yönlendirmeden sonra bir orijinal kaynak adresini otomatik olarak yok saymak için kullanılırlar.<br />Yeni bir makale çekilirken bir yönlendirme meydana gelirse, tüm orijinal kaynağı yok say kuralları (<i>kullanıcı tanımlı ve örnek tanımlı</i>) orijinal kaynak adresini yok saymak için kullanılacaktır.
+            ignore_origin_rules_definition_description: Wallabag tarafından bir yeniden yönlendirmeden sonra bir orijinal kaynak adresini otomatik olarak yok saymak için kullanılırlar.<br>Yeni bir makale çekilirken bir yönlendirme meydana gelirse, tüm orijinal kaynağı yok say kuralları (<i>kullanıcı tanımlı ve örnek tanımlı</i>) orijinal kaynak adresini yok saymak için kullanılacaktır.
             ignore_origin_rules_definition_title: « Orijinal kaynağı yok say kuralları » ne demektir?
-            how_to_use_them_description: « <i>rss.example.com</i> » adresinden gelen bir makalenin (<i>bir yönlendirmeden sonra gerçek adresin example.com olduğunu bilerek</i>) orijinal kaynağını yok saymak istediğinizi varsayalım.<br />Bu durumda, <i>Kural</i> alanına « host = "rss.example.com" » değerini koymalısınız.
+            how_to_use_them_description: « <i>rss.example.com</i> » adresinden gelen bir makalenin (<i>bir yönlendirmeden sonra gerçek adresin example.com olduğunu bilerek</i>) orijinal kaynağını yok saymak istediğinizi varsayalım.<br>Bu durumda, <i>Kural</i> alanına « host = "rss.example.com" » değerini koymalısınız.
     form_feed:
         feed_limit: Akıştaki makale sayısı
         feed_link:

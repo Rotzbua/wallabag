@@ -17,12 +17,12 @@
 
             <div class="input-field col s12">
                 <label for="_auth_code">{{ "auth_code"|trans({}, 'SchebTwoFactorBundle') }}</label>
-                <input id="_auth_code" type="text" autocomplete="off" name="{{ authCodeParameterName }}" />
+                <input id="_auth_code" type="text" autocomplete="off" name="{{ authCodeParameterName }}">
             </div>
 
             {% if displayTrustedOption %}
             <div class="input-field col s12">
-                <input id="_trusted" type="checkbox" name="{{ trustedParameterName }}" />
+                <input id="_trusted" type="checkbox" name="{{ trustedParameterName }}">
                 <label for="_trusted">{{ "trusted"|trans({}, 'SchebTwoFactorBundle') }}</label>
             </div>
             {% endif %}

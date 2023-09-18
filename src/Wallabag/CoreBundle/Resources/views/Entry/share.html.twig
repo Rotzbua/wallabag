@@ -4,19 +4,19 @@
         <meta charset="utf-8">
         <title>{{ entry.title|e|raw }}</title>
         <meta name="viewport" content="initial-scale=1.0">
-        <meta property="og:title" content="{{ entry.title|e|raw }}" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="{{ app.request.uri }}" />
+        <meta property="og:title" content="{{ entry.title|e|raw }}">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="{{ app.request.uri }}">
         {% set picture_path = app.request.schemeAndHttpHost ~ asset('img/logo-wallabag.svg') %}
         {% if entry.previewPicture is not null %}
             {% set picture_path = entry.previewPicture %}
         {% endif %}
-        <meta property="og:image" content="{{ picture_path }}" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image" content="{{ picture_path }}" />
-        <meta name="twitter:site" content="@wallabagapp" />
-        <meta name="twitter:title" content="{{ entry.title|e|raw }}" />
-        <meta name="twitter:description" content="{{ entry.content|striptags|slice(0, 300)|raw }}&hellip;" />
+        <meta property="og:image" content="{{ picture_path }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ picture_path }}">
+        <meta name="twitter:site" content="@wallabagapp">
+        <meta name="twitter:title" content="{{ entry.title|e|raw }}">
+        <meta name="twitter:description" content="{{ entry.content|striptags|slice(0, 300)|raw }}&hellip;">
         {% if app.debug %}
             <script src="{{ asset('wallassets/public.dev.js') }}"></script>
         {% else %}

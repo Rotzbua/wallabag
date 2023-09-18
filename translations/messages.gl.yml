@@ -194,7 +194,7 @@ config:
     form_ignore_origin_rules:
         faq:
             operator_description:
-                matches: 'Comproba que o <i>obxecto</i> concorda coa <i>busca</i> (non diferencia maiúsculas).<br />Exemplo: <code>_all ~ "https?://rss.example.com/foobar/.*"</code>'
+                matches: 'Comproba que o <i>obxecto</i> concorda coa <i>busca</i> (non diferencia maiúsculas).<br>Exemplo: <code>_all ~ "https?://rss.example.com/foobar/.*"</code>'
                 equal_to: Igual a…
                 label: Operador
             variable_description:
@@ -204,17 +204,17 @@ config:
             meaning: Significado
             variables_available_description: 'Podes usar as seguintes variables e operadores para crear regras que ignoran a orixe:'
             variables_available_title: Que variables e operadores podo utilizar para as regras?
-            how_to_use_them_description: Asumamos que queres ignorar a orixe dunha entrada procedente de « <i>rss.exemplo.com</i> » (<i>sabendo que tras a redirección o enderezo é exemplo.com</i>).<br />Neste caso, deberías escribir « host = "rss.exemplo.com" » no campo da <i>Regra</i> .
+            how_to_use_them_description: Asumamos que queres ignorar a orixe dunha entrada procedente de « <i>rss.exemplo.com</i> » (<i>sabendo que tras a redirección o enderezo é exemplo.com</i>).<br>Neste caso, deberías escribir « host = "rss.exemplo.com" » no campo da <i>Regra</i> .
             how_to_use_them_title: Como se usan?
-            ignore_origin_rules_definition_description: Utilízase para que wallabag ignore automáticamente un enderezo de orixe tras a redirección.<br />Se hai unha redirección mentras se obtén a nova entrada, utilizaranse as regras que ignoran a orixe (<i>definidas pola usuaria na instancia</i>) para ignorar o enderezo de orixe.
+            ignore_origin_rules_definition_description: Utilízase para que wallabag ignore automáticamente un enderezo de orixe tras a redirección.<br>Se hai unha redirección mentras se obtén a nova entrada, utilizaranse as regras que ignoran a orixe (<i>definidas pola usuaria na instancia</i>) para ignorar o enderezo de orixe.
             ignore_origin_rules_definition_title: Qué significa "ignorar regras de orixe"?
             title: PMF
     form_rules:
         faq:
-            how_to_use_them_description: 'Demos por feito que queres etiquetar as novas entradas con « <i>lectura rápida</i> » cando o tempo de lectura non supera os 3 minutos.<br />Neste caso, tes que poñer « TempodeLectura &lt;= 3 » no campo da <i>Regra</i> e « <i>lectura rápida</i> » no campo da <i>Etiqueta</i> .<br />Podes engadir varias etiquetas ó mesmo tempo separándoas cunha vírgula: « <i>lectura rápida, teño que ler</i> »<br />Pódense establecer regras complexas usando os operadores predefinidos: se o « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » entón etiquetar como « <i>lectura longa, php</i> »'
+            how_to_use_them_description: 'Demos por feito que queres etiquetar as novas entradas con « <i>lectura rápida</i> » cando o tempo de lectura non supera os 3 minutos.<br>Neste caso, tes que poñer « TempodeLectura &lt;= 3 » no campo da <i>Regra</i> e « <i>lectura rápida</i> » no campo da <i>Etiqueta</i> .<br>Podes engadir varias etiquetas ó mesmo tempo separándoas cunha vírgula: « <i>lectura rápida, teño que ler</i> »<br>Pódense establecer regras complexas usando os operadores predefinidos: se o « <i>readingTime &gt;= 5 AND domainName = "www.php.net"</i> » entón etiquetar como « <i>lectura longa, php</i> »'
             operator_description:
-                notmatches: 'Comproba que o <i>obxecto</i> non contén a <i>busca</i> (non dif. maiúsculas).<br />Exemplo: <code>título non contén "saúde"</code>'
-                matches: 'Comproba que un <i>obxecto</i> concorda coa <i>busca</i> (dif. maius.-minus.).<br />Exemplo: <code>título contén "saúde"</code>'
+                notmatches: 'Comproba que o <i>obxecto</i> non contén a <i>busca</i> (non dif. maiúsculas).<br>Exemplo: <code>título non contén "saúde"</code>'
+                matches: 'Comproba que un <i>obxecto</i> concorda coa <i>busca</i> (dif. maius.-minus.).<br>Exemplo: <code>título contén "saúde"</code>'
                 and: Unha regra E outra
                 or: Unha regra OU outra
                 not_equal_to: Diferente de…
@@ -239,7 +239,7 @@ config:
             variables_available_description: 'Podes usar as seguintes variables e operadores para crear regras de etiquetado:'
             variables_available_title: Que variables e operadores se poden usar nas regras?
             how_to_use_them_title: Como se utilizan?
-            tagging_rules_definition_description: Son regras utilizadas por wallabag para etiquetar automáticamente novas entradas.<br />Cada vez que se engade un elemento usaranse tódalas regras de etiquetados configuradas, aforrándoche o traballo de clasificar manualmente as túas entradas.
+            tagging_rules_definition_description: Son regras utilizadas por wallabag para etiquetar automáticamente novas entradas.<br>Cada vez que se engade un elemento usaranse tódalas regras de etiquetados configuradas, aforrándoche o traballo de clasificar manualmente as túas entradas.
             tagging_rules_definition_title: Que significa "regras de etiquetado"?
             title: PMF
         export: Exportar
