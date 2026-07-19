@@ -5,15 +5,10 @@ export default {
   plugins: ['stylelint-scss'],
   rules: {
     'block-no-redundant-nested-style-rules': null,
-    'color-function-alias-notation': null,
     'declaration-property-value-keyword-no-deprecated': null,
-    'property-no-deprecated': null,
-    'at-rule-no-unknown': null,
-    'no-duplicate-selectors': null,
     'font-family-no-missing-generic-family-keyword': null,
-    'no-descending-specificity': null,
-    'scss/at-rule-no-unknown': true,
     'media-feature-range-notation': null,
+    'scss/at-rule-no-unknown': true,
     'selector-class-pattern': [
       '^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?$',
       {
